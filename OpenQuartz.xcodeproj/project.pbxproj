@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		72CA9365301B912C00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		72CA9379301CECE400997E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CA9375301CECE400997E75 /* Assets.xcassets */; };
+		72CA937A301CECE400997E75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA9376301CECE400997E75 /* ContentView.swift */; };
+		72CA937B301CECE400997E75 /* OpenQuartzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA9377301CECE400997E75 /* OpenQuartzApp.swift */; };
+		72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA937F301CED6A00997E75 /* UsageSnapshot.swift */; };
+		72CA9384301CED9800997E75 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA9383301CED9800997E75 /* KeychainService.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		72CA9367301B912C00997E75 /* OpenQuartz */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OpenQuartz;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		72CA9365301B912C00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = OpenQuartz.app; path = /Users/abhiramkrishnam/Desktop/Master/Projects/swiftui/OpenQuartz/OpenQuartz/build/Debug/OpenQuartz.app; sourceTree = "<absolute>"; };
+		72CA9375301CECE400997E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72CA9376301CECE400997E75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72CA9377301CECE400997E75 /* OpenQuartzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuartzApp.swift; sourceTree = "<group>"; };
+		72CA937F301CED6A00997E75 /* UsageSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageSnapshot.swift; sourceTree = "<group>"; };
+		72CA9383301CED9800997E75 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		72CA9362301B912C00997E75 /* Frameworks */ = {
@@ -32,17 +37,44 @@
 		72CA935C301B912C00997E75 = {
 			isa = PBXGroup;
 			children = (
-				72CA9367301B912C00997E75 /* OpenQuartz */,
-				72CA9366301B912C00997E75 /* Products */,
+				72CA9378301CECE400997E75 /* OpenQuartz */,
 			);
 			sourceTree = "<group>";
 		};
-		72CA9366301B912C00997E75 /* Products */ = {
+		72CA9378301CECE400997E75 /* OpenQuartz */ = {
 			isa = PBXGroup;
 			children = (
-				72CA9365301B912C00997E75 /* OpenQuartz.app */,
+				72CA937C301CECE800997E75 /* Core */,
+				72CA9375301CECE400997E75 /* Assets.xcassets */,
+				72CA9376301CECE400997E75 /* ContentView.swift */,
+				72CA9377301CECE400997E75 /* OpenQuartzApp.swift */,
 			);
-			name = Products;
+			path = OpenQuartz;
+			sourceTree = "<group>";
+		};
+		72CA937C301CECE800997E75 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				72CA937E301CED0900997E75 /* Models */,
+				72CA937D301CED0100997E75 /* Services  */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		72CA937D301CED0100997E75 /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				72CA9383301CED9800997E75 /* KeychainService.swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
+		72CA937E301CED0900997E75 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72CA937F301CED6A00997E75 /* UsageSnapshot.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +91,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				72CA9367301B912C00997E75 /* OpenQuartz */,
 			);
 			name = OpenQuartz;
 			packageProductDependencies = (
@@ -95,7 +124,7 @@
 			mainGroup = 72CA935C301B912C00997E75;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 72CA9366301B912C00997E75 /* Products */;
+			productRefGroup = 72CA935C301B912C00997E75;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CA9379301CECE400997E75 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72CA937A301CECE400997E75 /* ContentView.swift in Sources */,
+				72CA9384301CED9800997E75 /* KeychainService.swift in Sources */,
+				72CA937B301CECE400997E75 /* OpenQuartzApp.swift in Sources */,
+				72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,17 +1,13 @@
-//
-//  OpenQuartzApp.swift
-//  OpenQuartz
-//
-//  Created by Abhiram Krishna M on 30/07/26.
-//
-
 import SwiftUI
 
 @main
 struct OpenQuartzApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("OQ 42%", systemImage: "gauge" ){
+            Text("Claude session: 42% used")
+            Text("Resets in 2h 15m")
+            Divider()
+            Button("Quit"){NSApplication.shared.terminate(nil)}
         }
     }
 }

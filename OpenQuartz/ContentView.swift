@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  OpenQuartz
-//
-//  Created by Abhiram Krishna M on 30/07/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
