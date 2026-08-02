@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct KeychainService {
+    func readClaudeCredentials() throws -> Data {
+        
+    }
+}
