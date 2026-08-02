@@ -7,7 +7,16 @@
 
 import Foundation
 
-
+// usage report
 struct UsageSnapshot {
-    
+    let limits: [LimitWindow]
 }
+
+// one single limit
+struct LimitWindow {
+    let name: String
+    let percentUsed: Double
+    let resetsAt: Date?
+}
+
+
