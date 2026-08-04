@@ -18,7 +18,7 @@ struct KeychainService {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: "Claude Code-credentials",
-            kSecAttrAccount as String: "abhiramrkishnam",
+            kSecAttrAccount as String: "abhiramkrishnam",
             kSecReturnData as String: true,
             kSecMatchLimit as String: kSecMatchLimitOne
         ]
