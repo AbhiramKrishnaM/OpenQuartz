@@ -7,9 +7,10 @@ struct OpenQuartzApp: App {
       let keychain = KeychainService()
         do {
             let data = try keychain.readClaudeCredentials()
-            let jsonstring = String(data: data, encoding: .utf8) ?? "count not decode as text"
-            print("Found credentials:")
-            print(jsonstring)
+            let decoder = JSONDecoder()
+            let credentials = try decoder.decode(ClaudeCredentials.self, from: data)
+            print("Access token starts with: \(credentials.claudeAiOauth.accessToken.prefix(15))")
+            
         } catch{
             print("Failed to read Keychain: \(error)")
         }
