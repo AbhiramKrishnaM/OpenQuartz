@@ -13,16 +13,20 @@
 		72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA937F301CED6A00997E75 /* UsageSnapshot.swift */; };
 		72CA9384301CED9800997E75 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA9383301CED9800997E75 /* KeychainService.swift */; };
 		72CA938630236DAE00997E75 /* ClaudeCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938530236DAE00997E75 /* ClaudeCredentials.swift */; };
+		72CA938C3023709E00997E75 /* ClaudeUsageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */; };
+		72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938D302371EB00997E75 /* ClaudeUsageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		72CA9365301B912C00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = OpenQuartz.app; path = /Users/abhiramkrishnam/Desktop/Master/Projects/swiftui/OpenQuartz/OpenQuartz/build/Debug/OpenQuartz.app; sourceTree = "<absolute>"; };
 		72CA9375301CECE400997E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72CA9376301CECE400997E75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72CA9377301CECE400997E75 /* OpenQuartzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenQuartzApp.swift; sourceTree = "<group>"; };
 		72CA937F301CED6A00997E75 /* UsageSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageSnapshot.swift; sourceTree = "<group>"; };
 		72CA9383301CED9800997E75 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		72CA938530236DAE00997E75 /* ClaudeCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeCredentials.swift; sourceTree = "<group>"; };
+		72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeUsageResponse.swift; sourceTree = "<group>"; };
+		72CA938D302371EB00997E75 /* ClaudeUsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeUsageService.swift; sourceTree = "<group>"; };
+		72CA938F3023769B00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				72CA9378301CECE400997E75 /* OpenQuartz */,
+				72CA938F3023769B00997E75 /* OpenQuartz.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				72CA9383301CED9800997E75 /* KeychainService.swift */,
+				72CA938D302371EB00997E75 /* ClaudeUsageService.swift */,
 			);
 			path = "Services ";
 			sourceTree = "<group>";
@@ -76,6 +82,7 @@
 			children = (
 				72CA937F301CED6A00997E75 /* UsageSnapshot.swift */,
 				72CA938530236DAE00997E75 /* ClaudeCredentials.swift */,
+				72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,7 +106,7 @@
 			packageProductDependencies = (
 			);
 			productName = OpenQuartz;
-			productReference = 72CA9365301B912C00997E75 /* OpenQuartz.app */;
+			productReference = 72CA938F3023769B00997E75 /* OpenQuartz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,8 +161,10 @@
 			files = (
 				72CA937A301CECE400997E75 /* ContentView.swift in Sources */,
 				72CA9384301CED9800997E75 /* KeychainService.swift in Sources */,
+				72CA938C3023709E00997E75 /* ClaudeUsageResponse.swift in Sources */,
 				72CA937B301CECE400997E75 /* OpenQuartzApp.swift in Sources */,
 				72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */,
+				72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */,
 				72CA938630236DAE00997E75 /* ClaudeCredentials.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +299,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -320,7 +339,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

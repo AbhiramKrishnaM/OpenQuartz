@@ -4,15 +4,21 @@ import SwiftUI
 struct OpenQuartzApp: App {
     
     init(){
-      let keychain = KeychainService()
-        do {
-            let data = try keychain.readClaudeCredentials()
-            let decoder = JSONDecoder()
-            let credentials = try decoder.decode(ClaudeCredentials.self, from: data)
-            print("Access token starts with: \(credentials.claudeAiOauth.accessToken.prefix(15))")
-            
-        } catch{
-            print("Failed to read Keychain: \(error)")
+        Task{
+        let keychain = KeychainService()
+            do {
+                let data = try keychain.readClaudeCredentials()
+                let decoder = JSONDecoder()
+                let credentials = try decoder.decode(ClaudeCredentials.self, from: data)
+                
+                let usageService = ClaudeUsageService()
+                let usage = try await usageService.fetchUsage(accessToken: credentials.claudeAiOauth.accessToken)
+                
+                print("Session usage: \(usage.fiveHour?.utilization ?? -1)%")
+                print("Weekly usage: \(usage.sevenDay?.utilization ?? -1)%")
+            } catch{
+                print("Failed to read Keychain: \(error)")
+            }
         }
     }
     
