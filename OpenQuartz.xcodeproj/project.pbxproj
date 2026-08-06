@@ -15,6 +15,7 @@
 		72CA938630236DAE00997E75 /* ClaudeCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938530236DAE00997E75 /* ClaudeCredentials.swift */; };
 		72CA938C3023709E00997E75 /* ClaudeUsageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */; };
 		72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938D302371EB00997E75 /* ClaudeUsageService.swift */; };
+		72CA93933024CE3100997E75 /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA93923024CE3100997E75 /* MenuBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeUsageResponse.swift; sourceTree = "<group>"; };
 		72CA938D302371EB00997E75 /* ClaudeUsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeUsageService.swift; sourceTree = "<group>"; };
 		72CA938F3023769B00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72CA93923024CE3100997E75 /* MenuBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		72CA9378301CECE400997E75 /* OpenQuartz */ = {
 			isa = PBXGroup;
 			children = (
+				72CA93903024CE0800997E75 /* Features */,
 				72CA937C301CECE800997E75 /* Core */,
 				72CA9375301CECE400997E75 /* Assets.xcassets */,
 				72CA9376301CECE400997E75 /* ContentView.swift */,
@@ -85,6 +88,22 @@
 				72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		72CA93903024CE0800997E75 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				72CA93913024CE1600997E75 /* MenuBar */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		72CA93913024CE1600997E75 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				72CA93923024CE3100997E75 /* MenuBarViewModel.swift */,
+			);
+			path = MenuBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +185,7 @@
 				72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */,
 				72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */,
 				72CA938630236DAE00997E75 /* ClaudeCredentials.swift in Sources */,
+				72CA93933024CE3100997E75 /* MenuBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
