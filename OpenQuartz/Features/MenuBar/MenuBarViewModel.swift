@@ -10,6 +10,8 @@ import Foundation
 @Observable
 class MenubarViewModel {
     var sessionPercent: Double = 0
+    private var timer: Timer?
+    
     
     func refreshUsage() async{
         do{
@@ -28,4 +30,14 @@ class MenubarViewModel {
             
         }
     }
+    
+    func startPolling(){
+        timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true){ _ in
+            Task {
+                await self.refreshUsage()
+            }
+        }
+        
+    }
+    
 }

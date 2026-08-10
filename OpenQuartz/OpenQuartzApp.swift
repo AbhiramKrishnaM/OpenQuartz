@@ -9,6 +9,7 @@ struct OpenQuartzApp: App {
         Task {
             await vm.refreshUsage()
         }
+        vm.startPolling()
     }
     
     var body: some Scene {
