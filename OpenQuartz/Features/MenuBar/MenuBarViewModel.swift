@@ -35,6 +35,7 @@ class MenubarViewModel {
         timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true){ _ in
             Task {
                 await self.refreshUsage()
+                
             }
         }
         
