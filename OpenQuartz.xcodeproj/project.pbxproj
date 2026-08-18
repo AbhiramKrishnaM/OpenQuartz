@@ -16,6 +16,7 @@
 		72CA938C3023709E00997E75 /* ClaudeUsageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938B3023709E00997E75 /* ClaudeUsageResponse.swift */; };
 		72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA938D302371EB00997E75 /* ClaudeUsageService.swift */; };
 		72CA93933024CE3100997E75 /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA93923024CE3100997E75 /* MenuBarViewModel.swift */; };
+		72CA93953034CAE200997E75 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CA93943034CAE200997E75 /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		72CA938D302371EB00997E75 /* ClaudeUsageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeUsageService.swift; sourceTree = "<group>"; };
 		72CA938F3023769B00997E75 /* OpenQuartz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuartz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CA93923024CE3100997E75 /* MenuBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewModel.swift; sourceTree = "<group>"; };
+		72CA93943034CAE200997E75 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				72CA9383301CED9800997E75 /* KeychainService.swift */,
 				72CA938D302371EB00997E75 /* ClaudeUsageService.swift */,
+				72CA93943034CAE200997E75 /* NotificationService.swift */,
 			);
 			path = "Services ";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				72CA9384301CED9800997E75 /* KeychainService.swift in Sources */,
 				72CA938C3023709E00997E75 /* ClaudeUsageResponse.swift in Sources */,
 				72CA937B301CECE400997E75 /* OpenQuartzApp.swift in Sources */,
+				72CA93953034CAE200997E75 /* NotificationService.swift in Sources */,
 				72CA9380301CED6A00997E75 /* UsageSnapshot.swift in Sources */,
 				72CA938E302371EB00997E75 /* ClaudeUsageService.swift in Sources */,
 				72CA938630236DAE00997E75 /* ClaudeCredentials.swift in Sources */,
