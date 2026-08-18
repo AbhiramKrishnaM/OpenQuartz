@@ -7,6 +7,7 @@ struct OpenQuartzApp: App {
     init(){
         let vm = viewModal
         Task {
+            await NotificationService().requestPermission()
             await vm.refreshUsage()
         }
         vm.startPolling()

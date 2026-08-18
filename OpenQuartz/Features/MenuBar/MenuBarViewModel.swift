@@ -12,6 +12,11 @@ class MenubarViewModel {
     var sessionPercent: Double = 0
     private var timer: Timer?
     
+    private var hasWarned75 = false
+    private var hasWarned90 = false
+    private let notificationService = NotificationService()
+    
+    
     
     func refreshUsage() async{
         do{
@@ -26,6 +31,21 @@ class MenubarViewModel {
             let usage = try await usageService.fetchUsage(accessToken: credentials.claudeAiOauth.accessToken)
             
             sessionPercent = usage.fiveHour?.utilization ?? 0
+            
+            if sessionPercent >= 90 && !hasWarned90{
+                notificationService.sendThresholdAlert(percent: 90)
+                hasWarned90 = true
+            } else if sessionPercent >= 75 && !hasWarned75{
+                notificationService.sendThresholdAlert(percent: 75)
+                hasWarned75 = true
+            }
+            
+            if sessionPercent < 75 {
+                hasWarned75 = false
+                hasWarned90 = false
+            }
+            
+            
         }catch {
             
         }
