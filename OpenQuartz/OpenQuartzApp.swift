@@ -18,6 +18,7 @@ struct OpenQuartzApp: App {
             Text("Claude session: \(Int(viewModal.sessionPercent))% used")
             Text("Resets in 2h 15m")
             Divider()
+            
             Button("Quit"){NSApplication.shared.terminate(nil)}
         }
     }
